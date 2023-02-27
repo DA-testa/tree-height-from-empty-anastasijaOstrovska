@@ -7,7 +7,6 @@ import sys
 import threading
 import numpy as np
 
-
 def compute_height(num, parents):
     height = np.zeros(num)
 
