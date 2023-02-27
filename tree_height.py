@@ -35,7 +35,6 @@ def main():
         string = string.split()
         parents = np.array(string)
         parents = parents.astype(int)
-        print(parents)
         print(compute_height(num, parents))
 
     if "f" in i.lower() :
@@ -49,7 +48,6 @@ def main():
                 string = string.split()
                 parents = np.array(string)
                 parents = parents.astype(int)
-                print(parents)
                 print(compute_height(num, parents))
 
 # In Python, the default limit on recursion depth is rather low,
