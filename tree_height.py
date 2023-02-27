@@ -17,13 +17,16 @@ def compute_height(num, parents):
         heighti = 1
         while parents[k] != -1 :
             if height[k] != 0 :
-                heighti += height[k]
+                heighti += height[k]- 1
                 break
+            
+
             heighti += 1
             k = parents[k]
         height[i] = heighti
         max_height = max(max_height, height[i])
-
+        print(height)
+    
     return max_height
 
 
