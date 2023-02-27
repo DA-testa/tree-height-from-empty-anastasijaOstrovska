@@ -25,7 +25,6 @@ def compute_height(num, parents):
             k = parents[k]
         height[i] = heighti
         max_height = max(max_height, height[i])
-        print(height)
     
     return max_height
 
