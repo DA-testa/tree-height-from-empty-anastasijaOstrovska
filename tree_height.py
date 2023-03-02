@@ -1,7 +1,4 @@
 #python3
-"""
-program for solving height/depth for tree, Anastasija Ostrovska 
-"""
 
 import sys
 import threading
@@ -16,7 +13,7 @@ def compute_height(num, parents):
         heighti = 1
         while parents[k] != -1 :
             if height[k] != 0 :
-                heighti += height[k]- 1
+                heighti += height[k] - 1
                 break
             
 
@@ -42,7 +39,7 @@ def main():
         name = input()
         name = "./test/" + name
         if "a" not in name:
-            with open(name, mode = 'r' ,  encoding="utf8") as fail:
+            with open(name, mode = 'r' ,  encoding = "utf8") as fail:
                 text = fail.readline()
                 num = int(text)# nember of elements
                 string = fail.readline()# for string
